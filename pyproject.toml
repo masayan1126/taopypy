@@ -1,0 +1,29 @@
+[project]
+name = "taopypy"
+version = "0.0.8"
+authors = [{ name="masayan1126", email="masa199311266@gmail.com" }]
+description = "This is masayan1126's utility python package"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3.10",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+    'numpy', 'requests'
+]
+
+[project.optional-dependencies]
+dev = [
+    "build",
+    "twine",
+]
+
+[project.scripts]
+taopypy = "taopypy:main"
+
+[project.urls]
+"Homepage" = "https://github.com/masayan1126/taopypy"
+"Bug Tracker" = "https://github.com/masayan1126/taopypy/issues"
