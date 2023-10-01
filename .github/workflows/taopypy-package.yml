@@ -1,0 +1,34 @@
+name: Publish a package to PyPI
+
+on:
+  release:
+    types:
+      - created
+
+concurrency:
+  taopypy_concurrency_workflow
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Setup Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.x
+      
+      - name: Install Dependencies
+        run: |
+            pip install --upgrade pip
+            # pip3 install -r requirements.txt
+            pip install build wheel
+
+      - name: Build Package
+        run: python3 -m build
+      
+      - name: Publish to PyPI
+        uses: pypa/gh-action-pypi-publish@release/v1
+        with:
+          user: __token__
+          password: ${{ secrets.PYPI_API_TOKEN }}
