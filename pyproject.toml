@@ -1,6 +1,6 @@
 [project]
 name = "taopypy"
-version = "0.1.0"
+version = "0.1.2"
 authors = [{ name="masayan1126", email="masa199311266@gmail.com" }]
 description = "This is masayan1126's utility python package"
 readme = "README.md"
