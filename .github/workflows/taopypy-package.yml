@@ -29,11 +29,11 @@ jobs:
             pwd
             cd ../ && ls -la
 
-      # - name: Build Package
-      #   run: python3 -m build
+      - name: Build Package
+        run: python3 -m build
       
-      # - name: Publish to PyPI
-      #   uses: pypa/gh-action-pypi-publish@release/v1
-      #   with:
-      #     user: __token__
-      #     password: ${{ secrets.PYPI_API_TOKEN }}
+      - name: Publish to PyPI
+        uses: pypa/gh-action-pypi-publish@release/v1
+        with:
+          user: __token__
+          password: ${{ secrets.PYPI_API_TOKEN }}
