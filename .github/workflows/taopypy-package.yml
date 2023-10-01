@@ -25,6 +25,7 @@ jobs:
             pip install build wheel
             ls -la
             pwd
+            cd ../ && ls -la
 
       # - name: Build Package
       #   run: python3 -m build
