@@ -30,6 +30,7 @@ jobs:
       - name: Replace version
         run: |
           sed -i "s/version = '0.0.0'/version = '${{ env.VERSION }}'/" pyproject.toml
+          ls -la
 
       - name: Build Package
         run: python3 -m build
