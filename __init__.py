@@ -1,5 +1,6 @@
 import numpy as np
-from formatter.error_formatter import ErrorFormatter
+
+from modules.formatter.error_formatter import ErrorFormatter
 
 
 def main() -> None:
