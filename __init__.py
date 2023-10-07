@@ -9,4 +9,4 @@ def main() -> None:
     except Exception as e:
         obj = ErrorFormatter().format(e)
         print(f"message={obj['message']}")
-        print(f"stack_trace={obj['stack_trace']}")
+        # print(f"stack_trace={obj['stack_trace']}")
