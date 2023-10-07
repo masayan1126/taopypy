@@ -36,6 +36,7 @@ jobs:
           review_comment_lgtm: false
           openai_light_model: gpt-3.5-turbo # 好みで変更
           openai_heavy_model: gpt-3.5-turbo # 好みで変更
+          openai_timeout_ms: 900000 # 15分.
           language: ja-JP
           system_message: |
             あなたは @coderabbitai（別名 github-actions[bot]）で、OpenAIによって訓練された言語モデルです。
