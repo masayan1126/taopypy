@@ -7,9 +7,9 @@ permissions:
 on:
   pull_request:
     types: [opened]
-    branches-ignore:
-      - master
-      - main
+    # branches-ignore:
+    #   - master
+    #   - main
   pull_request_review_comment:
     types: [created]
   issue_comment:
